@@ -7,40 +7,26 @@
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .time {
-  position: relative;
-  margin-left: 110px;
-  margin-bottom: 0;
-  margin-top: 0px;
-  top: 50px;
   font-family: "Bai Jamjuree", sans-serif;
+  margin-left: 150px;
+  margin-bottom: 0;
 }
 img {
-  display: block;
-  margin: 0 auto;
-  margin-top: 0;
-  width: 700px;
-}
-.tempnumber {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-40%, -50%);
+  max-width: 600px;
 }
 h2 {
   font-size: 80px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Barlow", sans-serif;
+  font-weight: bolder;
+  text-align: center;
 }
 
 h1 {
-  text-align: center;
-  margin-top: 18px;
   font-family: "Bebas Neue", cursive;
   font-size: 70px;
+  text-align: center;
 }
 .units {
-  position: relative;
-  margin-left: 140px;
-  bottom: 120px;
   font-family: "Bai Jamjuree", sans-serif;
 }
 ul {
@@ -53,16 +39,11 @@ li {
   padding: 0;
 }
 .description {
-  position: relative;
-  margin-bottom: 20px;
-  bottom: 170px;
   font-family: "Barlow", sans-serif;
   font-size: 25px;
   font-weight: bolder;
 }
 .condition {
-  position: relative;
-  bottom: 180px;
   font-family: "Barlow", sans-serif;
 }
 .source-link {
