@@ -12,6 +12,7 @@
   margin-bottom: 0;
   margin-top: 0px;
   top: 50px;
+  font-family: "Bai Jamjuree", sans-serif;
 }
 img {
   display: block;
@@ -26,17 +27,21 @@ img {
   transform: translate(-40%, -50%);
 }
 h2 {
-  font-size: 60px;
+  font-size: 80px;
+  font-family: "Oswald", sans-serif;
 }
 
 h1 {
   text-align: center;
   margin-top: 18px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 70px;
 }
 .units {
   position: relative;
   margin-left: 140px;
   bottom: 120px;
+  font-family: "Bai Jamjuree", sans-serif;
 }
 ul {
   margin: 0;
@@ -51,10 +56,14 @@ li {
   position: relative;
   margin-bottom: 20px;
   bottom: 170px;
+  font-family: "Barlow", sans-serif;
+  font-size: 25px;
+  font-weight: bolder;
 }
 .condition {
   position: relative;
   bottom: 180px;
+  font-family: "Barlow", sans-serif;
 }
 .source-link {
   text-align: center;
