@@ -17,35 +17,79 @@
   <body>
     <div class="container">
       <div class="weather-app">
-        <hr />
-        <footer class="source-link">
-          <small>
-            This project was coded by
-            <a
-              href="https://github.com/sogol-tech"
-              target="_blank"
-              class="name"
+        <div class="weather-app-wrapper">
+          <div class="row">
+            <div class="col-6">
+              <form id="search-engine">
+                <input
+                  type="search"
+                  placeholder="Search city..."
+                  class="form-control-sm mb-3"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </form>
+            </div>
+          </div>
+
+          <h1 class="city">London</h1>
+
+          <div class="current-time">
+            <small> Tuesday, May 18 19:23 </small>
+          </div>
+
+          <div class="main-temp">
+            <strong id="temperature"> 23 </strong>
+            <span class="units">
+              <a href="#" id="celsius" class="active">°C </a> |
+              <a href="#" id="fahrenheit">°F </a></span
             >
-              Sogol Afshar</a
-            >
-            and is
-            <a
-              href="https://github.com/sogol-tech/Vanilla-Weather-App"
-              target="_blank"
-              class="github"
-            >
-              open-sourced on GitHub</a
-            >
-            and
-            <a
-              href="https://festive-bardeen-45393f.netlify.app/"
-              target="_blank"
-              class="netlify"
-            >
-              hosted on Netlify</a
-            >
-          </small>
-        </footer>
+          </div>
+
+          <hr />
+          <div class="row weather-info">
+            <div class="col-6">Min: <span id="minTemp"></span>°C</div>
+            <div class="col-6">Max: <span id="maxTemp"></span>°C</div>
+            <div class="col-6">Humidity: <span id="humidity"></span>%</div>
+            <div class="col-6">Wind: <span id="wind"></span>km/h</div>
+          </div>
+          <hr />
+          <div class="row week-forecast">
+            <div class="col-md-3">MON 15°</div>
+            <div class="col-md-3">TUE 13°</div>
+            <div class="col-md-3">WED 15°</div>
+            <div class="col-md-3">THU 20°</div>
+          </div>
+          <hr />
+          <footer class="source-link">
+            <small>
+              This project was coded by
+              <a
+                href="https://github.com/sogol-tech"
+                target="_blank"
+                class="name"
+              >
+                Sogol Afshar</a
+              >
+              and is
+              <a
+                href="https://github.com/sogol-tech/Vanilla-Weather-App"
+                target="_blank"
+                class="github"
+              >
+                open-sourced on GitHub</a
+              >
+              and
+              <a
+                href="https://festive-bardeen-45393f.netlify.app/"
+                target="_blank"
+                class="netlify"
+              >
+                hosted on Netlify</a
+              >
+            </small>
+          </footer>
+        </div>
       </div>
     </div>
     <script src="src/script.js"></script>
