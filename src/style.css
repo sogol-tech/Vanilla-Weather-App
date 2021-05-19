@@ -29,8 +29,10 @@ h1 {
 strong {
   font-size: 50px;
 }
-.image-container {
-  text-align: center;
+.temperature-container {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .units {
   position: relative;
