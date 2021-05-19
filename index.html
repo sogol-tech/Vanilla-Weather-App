@@ -20,33 +20,44 @@
         <div class="weather-app-wrapper">
           <div class="row">
             <div class="col-6">
-              <form id="search-engine">
-                <input
-                  type="search"
-                  placeholder="Search city..."
-                  class="form-control-sm mb-3"
-                  id="city-input"
-                  autocomplete="off"
-                />
-              </form>
+              <div class="current-time">
+                <small> Tuesday, May 18 19:23 </small>
+              </div>
             </div>
+            <div class="col-6">
+              <span class="float-right">
+                <form id="search-engine">
+                  <input
+                    type="search"
+                    placeholder="Search city..."
+                    class="form-control-sm mb-3"
+                    id="city-input"
+                    autocomplete="off"
+                  />
+                </form>
+              </span>
+            </div>
+          </div>
+
+          <div class="image-container">
+            <h2><strong id="temperature"> 23° </strong></h2>
+            <img
+              src="src/images/cloudy.jpg"
+              class="rounded mx-auto d-block"
+              alt="snowy"
+              width="400"
+            />
           </div>
 
           <h1 class="city">London</h1>
 
-          <div class="current-time">
-            <small> Tuesday, May 18 19:23 </small>
-          </div>
-
           <div class="main-temp">
-            <strong id="temperature"> 23 </strong>
             <span class="units">
               <a href="#" id="celsius" class="active">°C </a> |
               <a href="#" id="fahrenheit">°F </a></span
             >
           </div>
 
-          <hr />
           <div class="row weather-info">
             <div class="col-6">Min: <span id="minTemp"></span>°C</div>
             <div class="col-6">Max: <span id="maxTemp"></span>°C</div>
@@ -55,10 +66,12 @@
           </div>
           <hr />
           <div class="row week-forecast">
-            <div class="col-md-3">MON 15°</div>
-            <div class="col-md-3">TUE 13°</div>
-            <div class="col-md-3">WED 15°</div>
-            <div class="col-md-3">THU 20°</div>
+            <div class="col-2">MON 15°</div>
+            <div class="col-2">TUE 13°</div>
+            <div class="col-2">WED 15°</div>
+            <div class="col-2">THU 20°</div>
+            <div class="col-2">FRI 15°</div>
+            <div class="col-2">SAT 20°</div>
           </div>
           <hr />
           <footer class="source-link">
