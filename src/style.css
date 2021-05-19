@@ -40,9 +40,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
-footer {
-  text-align: center;
-}
+
 .current-time {
   margin-top: 20px;
 }
@@ -69,4 +67,8 @@ input {
   border-bottom-style: hidden;
   background-color: white;
   outline: none;
+}
+footer {
+  text-align: center;
+  margin: 20px;
 }
