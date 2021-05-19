@@ -24,27 +24,36 @@
 
 h1 {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 0;
   margin-bottom: 15px;
   font-family: "Bebas Neue", cursive;
   font-size: 50px;
 }
 .temperature {
   font-size: 50px;
-  font-family: "Anton", sans-serif;
+  font-family: "Bebas Neue", cursive;
 }
 .temperature-container {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.units {
-  position: relative;
-  top: -35px;
-}
 footer {
   text-align: center;
 }
 .current-time {
   margin-top: 30px;
+}
+.units {
+  margin-right: 90px;
+}
+img {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.search {
+  margin-left: 60px;
+}
+small .description {
+  font-size: 8px;
 }
