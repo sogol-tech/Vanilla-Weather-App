@@ -22,13 +22,15 @@
   margin-top: 0;
 }
 
-h1 {
+.city {
   text-align: center;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
   font-family: "Bebas Neue", cursive;
   font-size: 50px;
+  line-height: 1;
 }
+
 .temperature {
   font-size: 50px;
   font-family: "Bebas Neue", cursive;
@@ -42,7 +44,7 @@ footer {
   text-align: center;
 }
 .current-time {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .units {
   margin-right: 90px;
@@ -52,8 +54,19 @@ img {
   margin-top: 0;
 }
 .search {
-  margin-left: 60px;
+  margin-left: 50px;
+  margin-top: 20px;
 }
-small .description {
-  font-size: 8px;
+.des {
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 40px;
+}
+input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color: white;
+  outline: none;
 }
