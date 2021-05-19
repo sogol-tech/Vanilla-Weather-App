@@ -21,44 +21,9 @@
   margin-bottom: 0;
   margin-top: 0;
 }
-
-.city {
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 0px;
-  font-family: "Bebas Neue", cursive;
-  font-size: 50px;
-  line-height: 1;
-}
-
-.temperature {
-  font-size: 50px;
-  font-family: "Bebas Neue", cursive;
-}
-.temperature-container {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.current-time {
-  margin-top: 20px;
-}
-.units {
-  margin-right: 90px;
-}
 img {
   margin-bottom: 0;
   margin-top: 0;
-}
-.search {
-  margin-left: 50px;
-  margin-top: 20px;
-}
-.des {
-  text-align: center;
-  line-height: 1;
-  margin-bottom: 40px;
 }
 input {
   border-top-style: hidden;
@@ -71,7 +36,50 @@ input {
 footer {
   text-align: center;
   margin: 20px;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+.current-time {
+  margin-top: 20px;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+.search {
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.temperature {
+  font-size: 60px;
+  font-family: "Bebas Neue", cursive;
+}
+.temperature-container {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.city {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 50px;
+}
+.units {
+  margin-right: 90px;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+.des {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #808588;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: bolder;
+  font-size: 18px;
+  line-height: 1;
 }
 .weather-info {
-  margin-left: 50px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+.week-forecast {
+  font-family: "Roboto Condensed", sans-serif;
 }
