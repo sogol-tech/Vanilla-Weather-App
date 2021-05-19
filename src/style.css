@@ -24,10 +24,14 @@
 
 h1 {
   text-align: center;
-  margin-top: 20px;
-}
-strong {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: "Bebas Neue", cursive;
   font-size: 50px;
+}
+.temperature {
+  font-size: 50px;
+  font-family: "Anton", sans-serif;
 }
 .temperature-container {
   left: 50%;
@@ -36,8 +40,11 @@ strong {
 }
 .units {
   position: relative;
-  top: -20px;
+  top: -35px;
 }
 footer {
   text-align: center;
+}
+.current-time {
+  margin-top: 30px;
 }
