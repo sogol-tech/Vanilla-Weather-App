@@ -64,6 +64,11 @@ function displayTemperature(response) {
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
 
   celsiusTemperature = response.data.main.temp;
+
+  let image = document.querySelector("#img");
+  if (celsiusTemperature > 2) {
+    image.src innerHTML = 
+  }
 }
 
 function search(city) {
