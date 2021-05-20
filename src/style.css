@@ -41,6 +41,7 @@ footer {
 .current-time {
   margin-top: 20px;
   font-family: "Bai Jamjuree", sans-serif;
+  text-transform: capitalize;
 }
 .search {
   margin-left: 50px;
@@ -73,6 +74,8 @@ footer {
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 15px;
   line-height: 1;
+}
+.des::first-letter {
   text-transform: capitalize;
 }
 .weather-info {
