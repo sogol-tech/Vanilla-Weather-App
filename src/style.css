@@ -71,8 +71,9 @@ footer {
   margin-bottom: 40px;
   color: #808588;
   font-family: "Bai Jamjuree", sans-serif;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1;
+  text-transform: capitalize;
 }
 .weather-info {
   font-family: "Roboto Condensed", sans-serif;

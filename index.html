@@ -25,6 +25,8 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
@@ -55,7 +57,7 @@
 
           <div class="image-container position-relative">
             <div class="position-absolute temperature-container">
-              <strong class="temperature"> 15° </strong>
+              <strong class="temperature" id="temperature"></strong>
             </div>
             <img
               src="src/images/CLEAR copy.jpg"
@@ -74,14 +76,14 @@
             </div>
           </div>
 
-          <h1 class="city">London</h1>
-          <p class="des">Clear sky</p>
+          <h1 class="city" id="city"></h1>
+          <p class="des" id="description"></p>
 
           <div class="row weather-info">
-            <div class="col-6">Min: 8<span id="minTemp"></span>°C</div>
-            <div class="col-6">Max: 17<span id="maxTemp"></span>°C</div>
-            <div class="col-6">Humidity: 49<span id="humidity"></span>%</div>
-            <div class="col-6">Wind: 7<span id="wind"></span>km/h</div>
+            <div class="col-6">Min: <span id="minTemp"></span>°C</div>
+            <div class="col-6">Max: <span id="maxTemp"></span>°C</div>
+            <div class="col-6">Humidity: <span id="humidity"></span>%</div>
+            <div class="col-6">Wind: <span id="wind"></span> km/h</div>
           </div>
           <hr />
           <div class="row week-forecast">
