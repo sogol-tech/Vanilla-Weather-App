@@ -64,11 +64,6 @@ function displayTemperature(response) {
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
 
   celsiusTemperature = response.data.main.temp;
-
-  let imageElemenet = document.getElementById("img");
-  if (celsiusTemperature > 2) {
-    imageElemenet.src = "src/images/clearnight.jpg";
-  }
 }
 
 function search(city) {
