@@ -39,6 +39,7 @@ function formatDate(timestamp) {
 }
 
 function displayTemperature(response) {
+  console.log(response);
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = `${Math.round(response.data.main.temp)}°`;
 
@@ -64,6 +65,11 @@ function displayTemperature(response) {
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
 
   celsiusTemperature = response.data.main.temp;
+
+  let imageElemenet = document.getElementById("img");
+  if (descriptionElement === "few clouds") {
+    imageElemenet.setAttribute("src", "src/images/DAY/Few-clouds.jpg");
+  }
 }
 
 function search(city) {
