@@ -67,10 +67,8 @@ function displayTemperature(response) {
   celsiusTemperature = response.data.main.temp;
 
   let imageElemenet = document.getElementById("img");
-  imageElemenet.setAttribute(
-    "src",
-    `src/images/${response.data.weather[0].icon}.png`
-  );
+  let icon = `src/images/${response.data.weather[0].icon}.png`;
+  imageElemenet.setAttribute("src", icon);
 }
 
 function search(city) {
