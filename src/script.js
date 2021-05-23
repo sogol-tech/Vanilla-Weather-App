@@ -67,8 +67,8 @@ function displayTemperature(response) {
   celsiusTemperature = response.data.main.temp;
 
   let imageElemenet = document.getElementById("img");
-  if (descriptionElement === "few clouds") {
-    imageElemenet.setAttribute("src", "src/images/DAY/Few-clouds.jpg");
+  if (response.data.weather[0].description === "few clouds") {
+    imageElemenet.setAttribute("src", "./src/images/Day/2.Few-clouds.jpg");
   }
 }
 
