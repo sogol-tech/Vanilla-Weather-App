@@ -67,9 +67,10 @@ function displayTemperature(response) {
   celsiusTemperature = response.data.main.temp;
 
   let imageElemenet = document.getElementById("img");
-  if (response.data.weather[0].description === "few clouds") {
-    imageElemenet.setAttribute("src", "./src/images/Day/2.Few-clouds.jpg");
-  }
+  imageElemenet.setAttribute(
+    "src",
+    `src/images/${response.data.weather[0].icon}.png`
+  );
 }
 
 function search(city) {
