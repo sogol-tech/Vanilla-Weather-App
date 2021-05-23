@@ -69,8 +69,17 @@ function displayTemperature(response) {
   let icon = `src/images/${response.data.weather[0].icon}.png`;
   imageElemenet.setAttribute("src", icon);
 
-  let nightIconNumber = ["01", "02", "03", "04", "09", "10", "13", "50"];
-  if ((response.data.weather[0].icon = `${nightIconNumber}n.png`)) {
+  let nightIconNumber = [
+    "01n.png",
+    "02n.png",
+    "03n.png",
+    "04n.png",
+    "09n.png",
+    "10n.png",
+    "13n.png",
+    "50n.png",
+  ];
+  if (response.data.weather[0].icon in nightIconNumber) {
     temperatureElement.classList.add("font-colour");
   }
 }
