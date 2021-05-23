@@ -39,7 +39,6 @@ function formatDate(timestamp) {
 }
 
 function displayTemperature(response) {
-  console.log(response);
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = `${Math.round(response.data.main.temp)}°`;
 
@@ -69,6 +68,11 @@ function displayTemperature(response) {
   let imageElemenet = document.getElementById("img");
   let icon = `src/images/${response.data.weather[0].icon}.png`;
   imageElemenet.setAttribute("src", icon);
+
+  let nightIconNumber = ["01", "02", "03", "04", "09", "10", "13", "50"];
+  if ((response.data.weather[0].icon = `${nightIconNumber}n.png`)) {
+    temperatureElement.classList.add("font-colour");
+  }
 }
 
 function search(city) {

@@ -56,6 +56,9 @@ footer {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+.font-colour {
+  color: aliceblue;
+}
 .city {
   text-align: center;
   margin-top: 0;
