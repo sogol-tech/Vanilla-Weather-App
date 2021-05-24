@@ -84,6 +84,43 @@ function displayTemperature(response) {
   }
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  forecastHTML =
+    forecastHTML +
+    `
+              <div class="col-2">
+                <div class="forecast-days">MON</div>
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/48/rain_light.png"
+                  alt=""
+                  width="36"
+                />
+                <div class="forecast-temperature">
+                  <span class="forecast-temperature-max">13°</span>
+                  <span class="forecast-temperature-min"> 6°</span>
+                </div>
+              </div>`;
+  forecastHTML =
+    forecastHTML +
+    `<div class="col-2">
+                <div class="forecast-days">MON</div>
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/48/rain_light.png"
+                  alt=""
+                  width="36"
+                />
+                <div class="forecast-temperature">
+                  <span class="forecast-temperature-max">13°</span>
+                  <span class="forecast-temperature-min"> 6°</span>
+                </div>
+              </div>`;
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function search(city) {
   let apiKey = "f22ac1427987190f2bc60c389965004c";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -123,3 +160,4 @@ let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", displaycelsiusTemperature);
 
 search("London");
+displayForecast();
