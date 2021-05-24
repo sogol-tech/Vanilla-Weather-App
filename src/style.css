@@ -84,7 +84,7 @@ footer {
   font-size: 15px;
   line-height: 1;
 }
-.des::first-letter {
+.des:first-letter {
   text-transform: capitalize;
 }
 .weather-info {
@@ -92,11 +92,23 @@ footer {
   font-weight: 500;
   text-align: center;
 }
-.week-forecast {
-  font-family: "Roboto Condensed", sans-serif;
-}
 .active {
   color: black;
   cursor: default;
   text-decoration: none;
+}
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.forecast-days {
+  font-size: 13px;
+  color: #808588;
+}
+.forecast-temperature {
+  font-size: 16px;
+}
+.forecast-temperature-min {
+  color: #808588;
 }
