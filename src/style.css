@@ -15,7 +15,7 @@
 }
 
 .weather-app-wrapper {
-  max-width: 400px;
+  max-width: 450px;
   max-height: 700px;
   margin: 50px auto;
   margin-bottom: 0;
@@ -103,11 +103,11 @@ footer {
   font-family: "Roboto Condensed", sans-serif;
 }
 .forecast-days {
-  font-size: 13px;
+  font-size: 15px;
   color: #808588;
 }
 .forecast-temperature {
-  font-size: 15px;
+  font-size: 18px;
 }
 .forecast-temperature-min {
   color: #808588;
