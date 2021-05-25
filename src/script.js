@@ -75,17 +75,19 @@ function displayTemperature(response) {
   imageElemenet.setAttribute("src", icon);
 
   let nightIconNumber = [
-    "01n.png",
-    "02n.png",
-    "03n.png",
-    "04n.png",
-    "09n.png",
-    "10n.png",
-    "13n.png",
-    "50n.png",
+    "01n",
+    "02n",
+    "03n",
+    "04n",
+    "09n",
+    "10n",
+    "13n",
+    "50n",
   ];
-  if (response.data.weather[0].icon in nightIconNumber) {
+  if (nightIconNumber.includes(response.data.weather[0].icon)) {
     temperatureElement.classList.add("font-colour");
+  } else {
+    temperatureElement.classList.remove("font-colour");
   }
   getForecast(response.data.coord);
 }
