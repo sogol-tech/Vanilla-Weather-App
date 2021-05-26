@@ -32,6 +32,7 @@ input {
   border-bottom-style: hidden;
   background-color: white;
   outline: none;
+  font-family: "Bai Jamjuree", sans-serif;
 }
 footer {
   text-align: center;
@@ -42,11 +43,21 @@ footer {
   margin-top: 20px;
   font-family: "Bai Jamjuree", sans-serif;
   text-transform: capitalize;
+  color: #536162;
 }
 .search {
-  margin-left: 50px;
+  margin-left: 25px;
   margin-top: 20px;
 }
+.button {
+  font-size: 23px;
+  margin-top: 20px;
+  margin-left: 50px;
+  border-style: none;
+  background-color: white;
+  color: #536162;
+}
+
 .temperature {
   font-size: 60px;
   font-family: "Bebas Neue", cursive;
@@ -75,11 +86,12 @@ footer {
 }
 .far {
   text-decoration: none;
+  font-family: "Bai Jamjuree", sans-serif;
 }
 .des {
   text-align: center;
   margin-bottom: 40px;
-  color: #808588;
+  color: #536162;
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 15px;
   line-height: 1;

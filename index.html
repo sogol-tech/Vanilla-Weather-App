@@ -25,6 +25,10 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/8d08fe4e65.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
     <link rel="stylesheet" href="src/style.css" />
@@ -35,12 +39,12 @@
       <div class="weather-app">
         <div class="weather-app-wrapper">
           <div class="row">
-            <div class="col-6">
+            <div class="col-4">
               <div class="current-time">
                 <small id="dt"></small>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-4">
               <span class="float-right">
                 <form class="search" id="searchCity">
                   <input
@@ -52,6 +56,11 @@
                   />
                 </form>
               </span>
+            </div>
+            <div class="col-4">
+              <button type="button" class="button" id="currentLocationButton">
+                <i class="fas fa-map-marker-alt"></i>
+              </button>
             </div>
           </div>
 
