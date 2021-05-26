@@ -151,6 +151,18 @@ let celsiusTemperature = null;
 let form = document.querySelector("#searchCity");
 form.addEventListener("submit", handleSubmit);
 
+function showPosition(position) {
+  apiKey = "f22ac1427987190f2bc60c389965004c";
+  apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+function retrievePosition(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(showPosition);
+}
+let currentLocationElement = document.querySelector("#currentLocationButton");
+currentLocationElement.addEventListener("click", retrievePosition);
+
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
   celsiusLink.classList.remove("active");
